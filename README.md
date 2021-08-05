@@ -1,4 +1,4 @@
-# react-blur-mouseover
+# react-blur-mouseover([demo](https://saberap.github.io/react-blur-mouseover/))
 
 > This is a component for React that gives you the ability to view before and after photos with a blur circle.
 
@@ -15,15 +15,39 @@ npm install --save react-blur-mouseover
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-blur-mouseover'
-import 'react-blur-mouseover/dist/index.css'
+import ReactBlurMouseover from 'react-blur-mouseover'
 
 class Example extends Component {
+  const firstImage = {
+      src : 'image1.jpg',
+      width: '100%',
+      height: '500px'
+  };
+  const secondImage = {
+      src : 'image2.jpg',
+      width: '100%',
+      height: '500px'
+  };
   render() {
-    return <MyComponent />
+    return <ReactBlurMouseover
+               firstImage={firstImage}
+               secondImage={secondImage}
+               radius={100}
+               />
   }
 }
 ```
+
+## Props
+
+| Property       | Type   | Default  | Description                        |
+| -------------- | ------ | -------- | ---------------------------------- |
+| `firstImage`   | object | Required | source, width and height of image. |
+| `secondImage`  | object | Required | source, width and height of image. |
+| `stdDeviation` | number | 5        | The amount of blur circle          |
+| `radius`       | number | 50       | Radius of circle                   |
+
+
 
 ## License
 
