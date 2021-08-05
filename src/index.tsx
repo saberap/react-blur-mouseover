@@ -15,7 +15,7 @@ interface Props {
 
 }
 
-export const ReactBlurMouseover = ({ firstImage,secondImage, stdDeviation, radius }: Props) => {
+const ReactBlurMouseover = ({ firstImage,secondImage, stdDeviation, radius }: Props) => {
 
   const mouseMoveHandler : (event:React.MouseEvent) => void = (e) => {
     e.preventDefault();
@@ -45,3 +45,4 @@ export const ReactBlurMouseover = ({ firstImage,secondImage, stdDeviation, radiu
 
   )
 }
+export default ReactBlurMouseover;

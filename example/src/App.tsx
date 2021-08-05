@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ReactBlurMouseover } from 'react-blur-mouseover'
+import  ReactBlurMouseover  from 'react-blur-mouseover'
 import 'react-blur-mouseover/dist/index.css'
 
 import Image1 from './assets/images/before.jpg';
